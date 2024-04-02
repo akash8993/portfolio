@@ -14,7 +14,7 @@ import { HomeComponent } from './home/home.component';
 import { RouterModule } from '@angular/router';
 import { ResumeComponent } from './resume/resume.component';
 import { HeaderComponent } from './header/header.component';
-
+import { HttpClientModule } from '@angular/common/http'; 
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +32,7 @@ import { HeaderComponent } from './header/header.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule
+    HttpClientModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
